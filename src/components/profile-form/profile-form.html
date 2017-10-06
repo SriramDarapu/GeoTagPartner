@@ -1,0 +1,57 @@
+<div>
+  <img 
+    src="assets/img/user.png" 
+    style="display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;"
+    (click)="presentActionSheet()"  
+  />
+</div>
+<div class="spacer" style="width:300px;height:18px;" id="completeProfile-spacer8"></div>
+<form id="completeProfile-form3">
+  <ion-item id="completeProfile-input6">
+    <ion-label floating>
+      Name
+    </ion-label>
+    <ion-input type="text" placeholder="Name"></ion-input>
+  </ion-item>
+  <ion-item id="completeProfile-input7">
+    <ion-label floating>
+      Mobile Number
+    </ion-label>
+    <ion-input type="mobile" placeholder="Mobile Number"></ion-input>
+  </ion-item>
+  <ion-item id="completeProfile-input8">
+    <ion-label floating>
+      Email ID
+    </ion-label>
+    <ion-input type="email" placeholder="Email ID"></ion-input>
+  </ion-item>
+  <ion-item id="completeProfile-input8">
+    <ion-label floating>
+      Business Category
+    </ion-label>
+    <ion-input type="text" placeholder="Business Category"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Date of Birth</ion-label>
+    <ion-datetime displayFormat="MMM DD YYYY"></ion-datetime>
+  </ion-item>
+  <ion-item id="completeProfile-input10">
+    <ion-label floating>
+      Location
+    </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <!-- <ion-item>
+    <ion-label>Range</ion-label>
+    <ion-select>
+      <ion-option value="1">1KM</ion-option>
+      <ion-option value="2">2KM</ion-option>
+      <ion-option value="3">5KM</ion-option>
+    </ion-select>
+  </ion-item> -->
+</form>
+<div class="spacer" style="width:300px;height:30px;" id="completeProfile-spacer11"></div>
+<button id="completeProfile-button4" ion-button color="positive" block on-click="goToHome()">
+  Submit
+</button>
+  

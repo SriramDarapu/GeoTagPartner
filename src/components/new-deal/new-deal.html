@@ -1,0 +1,82 @@
+<ion-fab right bottom>
+  <button ion-fab color="primary" (click)="presentModal()"><ion-icon name="funnel"></ion-icon></button>
+</ion-fab>
+<form>
+  <!-- <ion-list>
+    <ion-item>
+      <ion-label>Category</ion-label>
+      <ion-select>
+        <ion-option value="nes">NES</ion-option>
+        <ion-option value="n64">Nintendo64</ion-option>
+        <ion-option value="ps">PlayStation</ion-option>
+        <ion-option value="genesis">Sega Genesis</ion-option>
+        <ion-option value="saturn">Sega Saturn</ion-option>
+        <ion-option value="snes">SNES</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-5>
+          <div>
+            <img 
+              src="assets/img/person.png" 
+              style="display:block;width:51%;height:auto;margin-left:auto;margin-right:auto;margin-top: 7%;"
+              (click)="presentActionSheet()"
+             />
+          </div>
+      </ion-col>
+      <ion-col col-7>
+        <ion-list>
+          <ion-item>
+            <ion-label>Category</ion-label>
+            <ion-select>
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Range</ion-label>
+            <ion-select>
+              <ion-option value="1">1KM</ion-option>
+              <ion-option value="2">2KM</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>
+        Description
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Notifications Schedule</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Start Time</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Expiry Time</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <div style="padding: 10px">
+    <button id="login-button1" ion-button color="positive" block>
+      Submit
+    </button>
+  </div>
+</form>

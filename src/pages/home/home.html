@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page1">
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start (click)="presentActionSheet()">
+        <img src="https://raw.githubusercontent.com/ionic-team/ionic-preview-app/master/src/assets/img/avatar-gollum.jpg">
+      </ion-avatar>
+      <h2>Gollum</h2>
+      <p>Sneaky little hobbitses!</p>
+      <button ion-button clear item-end (click)="gotoEditProfile()">
+          <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="dashboard">
+        <ion-icon name="apps"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="home">
+        <ion-icon name="list"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="postDeals">
+        <ion-icon name="add"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="pet">
+      <div *ngSwitchCase="'home'">
+        <deals></deals>
+      </div>
+      <div *ngSwitchCase="'dashboard'">
+        <dashboard></dashboard>
+      </div>
+      <div *ngSwitchCase="'postDeals'">
+        <new-deal></new-deal>
+      </div>
+    </div>
+</ion-content>
