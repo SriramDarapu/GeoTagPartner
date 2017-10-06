@@ -1,4 +1,4 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is the code for [GeoTagPartner Code](https://github.com/SriramDarapu/GeoTagPartner) project.
 
 ## How to use this template
 
